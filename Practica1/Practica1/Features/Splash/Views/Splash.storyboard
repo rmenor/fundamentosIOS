@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gO3-8d-qz9">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Splash View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="SplashViewController" customModule="Practica1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home" translatesAutoresizingMaskIntoConstraints="NO" id="KtW-qn-qbQ">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="YCL-Y2-DHD">
+                                <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="KtW-qn-qbQ" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="832-Rz-lfF"/>
+                            <constraint firstItem="YCL-Y2-DHD" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="AX5-47-zF6"/>
+                            <constraint firstItem="KtW-qn-qbQ" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="Nvu-dR-wx0"/>
+                            <constraint firstItem="KtW-qn-qbQ" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="dCa-NR-Dh4"/>
+                            <constraint firstItem="YCL-Y2-DHD" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="qTm-wY-v4G"/>
+                            <constraint firstAttribute="bottom" secondItem="KtW-qn-qbQ" secondAttribute="bottom" id="qqo-JG-eKT"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="kms-Ha-pPR"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="YCL-Y2-DHD" id="13L-qe-Xxs"/>
+                        <segue destination="GKX-Gm-Akf" kind="show" identifier="SEGUE_FROM_SPLASH_TO_HOME" id="2Da-LF-alz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1042.0289855072465" y="114.50892857142857"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="nls-jf-qGT">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Home" id="GKX-Gm-Akf" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Giu-58-kjf"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vYp-cp-nU9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1887" y="136"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="S69-YF-YyF">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gO3-8d-qz9" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="jTN-Ug-bUb">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="R8q-oj-HvQ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TSR-nz-96u" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="114.50892857142857"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="home" width="250" height="541.33331298828125"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

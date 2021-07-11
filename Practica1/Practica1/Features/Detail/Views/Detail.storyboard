@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Yon Rogg-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="DetailViewController" customModule="Practica1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="zoA-p6-qgM">
+                                <rect key="frame" x="10" y="54" width="394" height="414.5"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Baner_Yon-Rogg" translatesAutoresizingMaskIntoConstraints="NO" id="9lO-0P-leP">
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="394"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="9lO-0P-leP" secondAttribute="height" multiplier="1:1" id="br9-vD-phD"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Detalle" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oD4-Pl-55w">
+                                        <rect key="frame" x="0.0" y="394" width="394" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="9lO-0P-leP" firstAttribute="centerX" secondItem="zoA-p6-qgM" secondAttribute="centerX" id="AYj-7J-ijd"/>
+                                    <constraint firstItem="oD4-Pl-55w" firstAttribute="centerX" secondItem="zoA-p6-qgM" secondAttribute="centerX" id="DOc-6f-KIu"/>
+                                    <constraint firstItem="oD4-Pl-55w" firstAttribute="centerX" secondItem="zoA-p6-qgM" secondAttribute="centerX" id="c3C-z6-dl2"/>
+                                    <constraint firstItem="oD4-Pl-55w" firstAttribute="top" secondItem="9lO-0P-leP" secondAttribute="bottom" constant="20" id="f3A-xv-sRR"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="zoA-p6-qgM" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="10" id="XAS-cR-Hwh"/>
+                            <constraint firstAttribute="trailing" secondItem="zoA-p6-qgM" secondAttribute="trailing" constant="10" id="b1r-kI-mIu"/>
+                            <constraint firstItem="zoA-p6-qgM" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="10" id="cud-CK-S1b"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Yon Rogg" id="f1v-BV-GnH"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1042.0289855072465" y="105.80357142857143"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Baner_Yon-Rogg" width="335" height="207"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
